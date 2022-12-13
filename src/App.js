@@ -1,7 +1,7 @@
 import Home from './routes/home/home.component';
 import { Routes, Route } from 'react-router-dom'
 import NavigationBar from './routes/navigation/navigation-bar.component'
-import SignIn from './routes/sign-in/sign-in.component';
+import Authentication from './routes/authentication/authentication.component';
 
 
 
@@ -14,7 +14,7 @@ const App = () => {
     <Routes>
      <Route path='/' element={<NavigationBar />}> 
         <Route index element={<Home />} />
-        <Route path='signin' element={<SignIn />} />
+        <Route path='auth' element={<Authentication />} />
         <Route path='shop' element={<Shop />} />
       </Route>
     </Routes> 
